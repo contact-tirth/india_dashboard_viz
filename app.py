@@ -9,7 +9,7 @@ st.title('India Analysis Dashboard')
 
 st.sidebar.title('Select Your Choice')
 
-final_df = pd.read_csv('D:\Learning\DSMP 2.0\india_dashboard_viz\Datasets\india.csv')
+final_df = pd.read_csv('india.csv')
 state_name = list(final_df['State'].unique())
 state_name.insert(0,'All Over India')
 first_Para = list(final_df[['Population','Households_with_Internet','sex_ratio','Lat_Rate']])
